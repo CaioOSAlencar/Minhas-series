@@ -10,14 +10,18 @@ h1 {
     color: #fff;
 }
 
-
 .menu{
-    background-color: #000000;
+    background-color: black;
 }
 
-.menu-list {
+.menu-list > ul{
     display: flex;
-    align-items: center;
+    flex-direction: row;
+    gap: 20px;
+    list-style: none;
+    padding: 20px;
+    font-size: 20px;
+    color: #fff;
 }
 
 .menu-list li {
@@ -29,6 +33,37 @@ h1 {
     height: auto;
 }
 
+.fundo_menu{
+    background-image: url(/assents/image/image\ 51.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    align-items: center;
+}
+
+input[type="text"]{
+    width: 933px;
+    height: 40px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+input[type="button"] {
+    width: 153px;
+    height: 62px;
+    margin-left: -5px;
+    border: 1px;
+    background-color: #00BFFF;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
 
 .container {
     display: flex;
@@ -37,15 +72,16 @@ h1 {
     padding: 20px;
 }
 .card {
-    width: 200px;
-    margin: 10px;
+    width: 209px;
+    margin: 15px;
     background-color: #f2f2f2;
     text-align: center;
-    padding: 10px;
+    padding: 30px;
     box-shadow: 1px 1px 2px #333;
+    position: relative;
 }
 .card img {
-    width: 150px;
-    height: 200px;
+    width: 209px;
+    height: 300px;
     object-fit: cover;
 }
